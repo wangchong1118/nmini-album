@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>冲哥图片库</title>
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/main.css" rel="stylesheet">
+</head><body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">导航切换</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand color-theme" href="/">
+                <img src="/static/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right mg-t-3">
+                <li>
+                    <a href="/upload" class="pd-tb-0"><button class="btn btn-success">上传图片</button></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <% for(var i=0; i<categores.length; i++){ %>
+        <div class="col-md-3 col-xs-6">
+            <a href="/<%=categores[i]%>" class="thumb-item">
+                <span class="img icon">
+                    <img src="/static/icon.jpg" alt="<%=categores[i]%>">
+                </span>
+                <span class="title"><%=categores[i]%></span>
+            </a>
+        </div>
+        <%}%>
+    </div>
+</div>
+
+<script src="/static/jquery.min.js"></script>
+<script src="/static/bootstrap.min.js"></script>
+</body></html>
