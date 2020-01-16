@@ -20,7 +20,8 @@
 	.modal-dialog{margin: 72px auto;}
 }
 .modal-header span{font-size: 18px;line-height: 36px;font-weight: bold;color: #303030;}
-.modal-body img{width: 100%;}
+.modal-body{background: #F0F1F2;}
+.modal-body img{max-width: 100%;max-height: 760px;}
 
 .thumb-item{display: block;padding: 10px;text-align: center;overflow: hidden;}
 .thumb-item .img{display: block;border: 1px solid #cbd8e4;border-radius: 4px;transition: all 0.5s;}
